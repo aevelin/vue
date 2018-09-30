@@ -15,7 +15,9 @@ new Vue({
 new Vue({
     el: '#events',
     data: {
-        number: 45
+        number: 45,
+        x: 0,
+        y: 0
     },
     methods: {
         add: function(inc){
@@ -23,6 +25,13 @@ new Vue({
         },
         subtract: function(dec){
             this.number -= dec;
+        },
+        updateXY: function(event){
+            this.x = event.offsetX;
+            this.y = event.offsetY;
+        },
+        click: function(){
+            alert("You do not want to go there!");
         } 
     }
 });
