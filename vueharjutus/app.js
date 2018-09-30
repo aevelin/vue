@@ -50,3 +50,14 @@ new Vue({
         }
     }
 });
+
+new Vue({
+    el: '#binding',
+    data: {
+        name: '',
+        age: ''
+
+    },
+    methods: {
+    }  
+});
