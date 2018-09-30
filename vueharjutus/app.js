@@ -35,3 +35,18 @@ new Vue({
         } 
     }
 });
+
+new Vue({
+    el: '#keyboard-event',
+    data: {
+
+    },
+    methods: {
+        logName: function(){
+            console.log('You entered your name');
+        },
+        logAge: function(){
+            console.log('You entered your age');
+        }
+    }
+});
