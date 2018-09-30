@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Dynamic CSS</title>
+    <script src="https://unpkg.com/vue"></script>
+    <link href="style.css" rel="stylesheet"/>
+  </head>
+  <body>
+      <div id="css">
+
+        <h1>Dynamic CSS</h1>
+        <h2>Example 1</h2>
+        <!--Key is class name and value is boolean (true or false)
+        First available is key and second is value (found in data)
+        First is shown as class while inspecting-->
+        <div v-on:click="available = !available" v-bind:class="{available: available}">
+        <span>Taxi Driver</span>
+        </div>
+
+        <h2>Example 2</h2>
+        <button v-on:click="available = !available">Toggle available</button>
+        <button v-on:click="nearby = !nearby">Toggle nearby</button>
+        <div v-bind:class="compClasses">
+            <span>Bus Driver</span>
+        </div>
+
+      </div>
+      
+      <script src="app.js"></script>
+
+  </body>
+</html>
