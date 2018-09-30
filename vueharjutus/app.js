@@ -11,3 +11,10 @@ new Vue({
         }
     }
 });
+
+new Vue({
+    el: '#events',
+    data: {
+        number: 45,
+    }
+})
