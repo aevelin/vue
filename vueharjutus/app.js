@@ -18,11 +18,11 @@ new Vue({
         number: 45
     },
     methods: {
-        add: function(){
-            this.number++;
+        add: function(inc){
+            this.number += inc;
         },
-        subtract: function(){
-            this.number--;
+        subtract: function(dec){
+            this.number -= dec;
         } 
     }
 });
