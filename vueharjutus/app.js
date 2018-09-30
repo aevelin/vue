@@ -15,6 +15,14 @@ new Vue({
 new Vue({
     el: '#events',
     data: {
-        number: 45,
+        number: 45
+    },
+    methods: {
+        add: function(){
+            this.number++;
+        },
+        subtract: function(){
+            this.number--;
+        } 
     }
-})
+});
