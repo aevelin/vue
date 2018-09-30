@@ -4,8 +4,8 @@ new Vue({
         name: 'Vue harjutus'
     },
     methods: {
-        greet: function(person) {
-            return 'Tere, tere ' + person + '!';
+        greet: function(time) {
+            return 'Tere ' + time + ', ' + this.name + '!';
         }
     }
 });
