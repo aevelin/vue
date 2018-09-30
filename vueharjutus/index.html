@@ -10,6 +10,11 @@
       <div id="vue-app">
         <h1> {{ greet('päevast') }}</h1>
         <p>{{ name }}</p>
+        <a v-bind:href="website">Harjutus GitHubis</a>
+        <!-- Lühemalt: <a :href="website">Harjutus GitHubis</a>-->
+        <br><br>
+        <input type="text" v-bind:value="name"/>
+        <p v-html="websiteTag"></p>
       </div>
       
       <script src="app.js"></script>
